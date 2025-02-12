@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>User Dashboard</title>
+    </head>
+    <body class="font-['Helvetica']">
+        <header>
+            <nav class="flex justify-between items-center px-6 lg:px-28 py-4">
+                <h2 class="text-4xl font-bold">Dashboard</h2>
+                <div class="flex gap-8">
+                    <div class="p-2 rounded-full bg-slate-100">
+                        <img src="./notifications.png" alt="Notifications">
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-blue-500 grid place-items-center">
+                        <h6 class="text-2xl text-white font-medium">M</h6>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="px-6 lg:px-28 py-12 space-y-8">
+            <section class="stats grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="rounded-lg border border-gray-300 shadow shadow-gray-300 flex items-center justify-between p-5">
+                    <div class="space-y-2">
+                        <h4 class="text-gray-500 font-medium text-xl">TOTAL TASKS</h4>
+                        <h2 class="text-gray-900 font-bold text-3xl">5</h2>
+                        <h5 class="text-gray-500 font-medium text-lg">11 Last Month</h5>
+                    </div>
+                    <div class="p-4 rounded-full bg-blue-100">
+                        <img src="./tasks.png" alt="Tasks" class="w-8">
+                    </div>
+                </div>
+                <div class="rounded-lg border border-gray-300 shadow shadow-gray-300 flex items-center justify-between p-5">
+                    <div class="space-y-2">
+                        <h4 class="text-gray-500 font-medium text-xl">COMPLETED</h4>
+                        <h2 class="text-gray-900 font-bold text-3xl">1</h2>
+                        <h5 class="text-gray-500 font-medium text-lg">10 Last Month</h5>
+                    </div>
+                    <div class="p-4 rounded-full bg-green-100">
+                        <img src="./completed.png" alt="Tasks" class="w-8">
+                    </div>
+                </div>
+                <div class="rounded-lg border border-gray-300 shadow shadow-gray-300 flex items-center justify-between p-5">
+                    <div class="space-y-2">
+                        <h4 class="text-gray-500 font-medium text-xl">IN PROGRESS</h4>
+                        <h2 class="text-gray-900 font-bold text-3xl">2</h2>
+                        <h5 class="text-gray-500 font-medium text-lg">1 Last Month</h5>
+                    </div>
+                    <div class="p-4 rounded-full bg-yellow-100">
+                        <img src="./progressing.png" alt="Tasks" class="w-8">
+                    </div>
+                </div>
+                <div class="rounded-lg border border-gray-300 shadow shadow-gray-300 flex items-center justify-between p-5">
+                    <div class="space-y-2">
+                        <h4 class="text-gray-500 font-medium text-xl">TODOS</h4>
+                        <h2 class="text-gray-900 font-bold text-3xl">2</h2>
+                        <h5 class="text-gray-500 font-medium text-lg">1 Last Month</h5>
+                    </div>
+                    <div class="p-4 rounded-full bg-purple-100">
+                        <img src="./tasks.png" alt="Tasks" class="w-8">
+                    </div>
+                </div>
+            </section>
+            <section class="tasks-list grid xl:grid-cols-2 grid-cols-1 gap-8">
+                <div class="today-tasks space-y-3 px-6 pt-8 pb-20 rounded-xl border border-gray-300 shadow shadow-gray-300">
+                    <h3 class="text-3xl font-bold">Today's Tasks</h3>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <div class="bg-green-500 w-2 h-2 rounded-full"></div>
+                            <p class="text-lg font-medium">Complete Event Management Project</p>
+                        </div>
+                        <p class="font-medium text-xl text-gray-500">High</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <div class="bg-yellow-500 w-2 h-2 rounded-full"></div>
+                            <p class="text-lg font-medium">Complete Web-11's JavaScript Modules</p>
+                        </div>
+                        <p class="font-medium text-xl text-gray-500">Normal</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <div class="bg-blue-500 w-2 h-2 rounded-full"></div>
+                            <p class="text-lg font-medium">Post Weekly Quote on LinkedIn</p>
+                        </div>
+                        <p class="font-medium text-xl text-gray-500">Low</p>
+                    </div>
+                </div>
+                <div class="all-tasks space-y-3 px-6 py-8 rounded-xl border border-gray-300 shadow shadow-gray-300">
+                    <h3 class="text-3xl font-bold">All Tasks</h3>
+                    <div class="flex gap-4 sm:gap-12 md:gap-24 lg:gap-12 2xl:gap-16 text-lg text-gray-500 font-semibold">
+                        <h6>TASK TITLE</h6>
+                        <h6>PRIORITY</h6>
+                        <h6>TEAM</h6>
+                        <h6>CREATED AT</h6>
+                    </div>
+                    <div class="flex text-lg font-medium">
+                        <div class="flex items-center gap-2 mr-20 lg:mr-10">
+                            <div class="bg-green-500 w-2 h-2 rounded-full"></div>
+                            <p>Low Test Task</p>
+                        </div>
+                        <div class="px-3 rounded bg-blue-200 text-blue-700 mr-28 lg:mr-[5.5rem] font-semibold">Low</div>
+                        <div class="flex text-[16px] items-center text-white font-medium relative mr-36 lg:mr-[116px]">
+                            <div class="absolute left-0 w-8 h-8 bg-rose-500 rounded-full grid place-items-center">HT</div>
+                            <div class="absolute left-5 w-8 h-8 bg-orange-500 rounded-full grid place-items-center">ML</div>
+                            <div class="absolute left-10 w-8 h-8 bg-blue-500 rounded-full grid place-items-center">C</div>
+                        </div>
+                        <h6 class="text-gray-500">3 months ago</h6>
+                    </div>
+                    <div class="flex text-lg font-medium">
+                        <div class="flex items-center gap-2 mr-28 lg:mr-[4.75rem]">
+                            <div class="bg-yellow-500 w-2 h-2 rounded-full"></div>
+                            <p>Test Task</p>
+                        </div>
+                        <div class="px-3 rounded bg-green-200 text-green-700 mr-24 lg:mr-16 font-semibold">Normal</div>
+                        <div class="flex items-center text-[16px] text-white font-medium relative mr-36 lg:mr-[116px]">
+                            <div class="absolute left-0 w-8 h-8 bg-blue-500 rounded-full grid place-items-center">SS</div>
+                            <div class="absolute left-5 w-8 h-8 bg-yellow-500 rounded-full grid place-items-center">JS</div>
+                            <div class="absolute left-10 w-8 h-8 bg-indigo-500 rounded-full grid place-items-center">P</div>
+                        </div>
+                        <h6 class="text-gray-500">2 months ago</h6>
+                    </div>
+                    <div class="flex text-lg font-medium">
+                        <div class="flex items-center gap-2 mr-20 lg:mr-9">
+                            <div class="bg-green-500 w-2 h-2 rounded-full"></div>
+                            <p>High Test Task</p>
+                        </div>
+                        <div class="px-3 rounded bg-red-200 text-red-700 mr-28 lg:mr-[5.25rem] font-semibold">High</div>
+                        <div class="flex items-center text-[16px] text-white font-medium relative mr-36 lg:mr-[116px]">
+                            <div class="absolute left-0 w-8 h-8 bg-purple-500 rounded-full grid place-items-center">HP</div>
+                            <div class="absolute left-5 w-8 h-8 bg-yellow-500 rounded-full grid place-items-center">PY</div>
+                            <div class="absolute left-10 w-8 h-8 bg-green-500 rounded-full grid place-items-center">DJ</div>
+                            <div class="absolute left-[3.74rem] w-8 h-8 bg-blue-500 rounded-full grid place-items-center">C</div>
+                        </div>
+                        <h6 class="text-gray-500">1 month ago</h6>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
